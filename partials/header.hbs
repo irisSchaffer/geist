@@ -1,0 +1,17 @@
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <div class="container">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+        <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        <h2 class="blog-description">{{@blog.description}}</h2>
+
+        <div class="site-head-social">
+            <a class="github"><span class="fa fa-github fa-fw"></span></a>
+            <a class="twitter"><span class="fa fa-twitter fa-fw"></span></a>
+            <a class="facebook"><span class="fa fa-facebook fa-fw"></span></a>
+            {{! <a class="linkedin"><span class="fa fa-linkedin fa-fw"></span></a> }}
+            {{! <a class="stack-overflow"><span class="fa fa-stack-overflow fa-fw"></span></a> }}
+        </div>
+        </div>
+    </div>
+</header>

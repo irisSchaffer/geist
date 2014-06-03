@@ -1,0 +1,19 @@
+<div class="post-wrapper {{#if @even}}even{{else}}odd{{/if}}">
+    <div class="container">
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <p class="post-meta">
+                    <span class="post-meta-time"> <span class="fa fa-clock-o"></span> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+                    <span class="post-meta-tags">{{tags prefix="<span class=\"fa fa-tag\"></span> "}}</span>
+                </p>
+            </header>
+            <section class="post-excerpt">
+                <p>{{excerpt characters="400"}}&hellip;</p>
+            </section>
+            <footer class="post-footer">
+                
+            </footer>
+        </article>
+    </div>
+</div>
