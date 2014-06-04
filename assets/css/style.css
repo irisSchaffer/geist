@@ -13,9 +13,7 @@
     6.  Tag Archive
     7.  Pagination
     8.  Third Party Elements
-    9.  Footer
-    10. Media Queries (Tablet)
-    11. Media Queries (Mobile)
+    9.  Media Queries
 
  */
 
@@ -136,7 +134,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 html {
-    font-size: 62.5%;   
+    font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     -ms-text-size-adjust: 100%;
@@ -151,6 +149,7 @@ html, body {
 
 body {
     font-size: 1.8rem;
+    line-height: 1.35;
 }
 
 h1, h2, h3,
@@ -198,7 +197,7 @@ a {
 }
 
 a:hover {
-    color: #FF4040;
+    color: #EF4F47;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -246,7 +245,7 @@ button, .button {
     margin: 5px 0px;
     color: #FFFFFF;
     text-decoration: none;
-    background-color: #FF4040;
+    background-color: #EF4F47;
     border-radius: 5px;
 
     -webkit-transition: all 0.3s ease-in-out;
@@ -256,7 +255,7 @@ button, .button {
 
 button:hover, .button:hover {
     color: #FFFFFF;
-    background-color: #DA1D1D;
+    background-color: #DD3838;
 }
 
 blockquote {
@@ -446,8 +445,8 @@ margin on the iframe, cause it breaks stuff. */
     background-size: cover;
     padding: 3rem 0rem;
     margin: 0;
-    background: #FF4040 no-repeat center center;
-    border-bottom: 1px solid #DA1D1D;
+    background: #EF4F47 no-repeat center center;
+    border-bottom: 1px solid #DD3838;
 }
 
 .blog-logo {
@@ -457,7 +456,6 @@ margin on the iframe, cause it breaks stuff. */
 .blog-logo img {
     height: 100px;
     width: 100px;
-    /*float: left;*/
     min-height: 100px;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -467,8 +465,6 @@ margin on the iframe, cause it breaks stuff. */
 .blog-title {
     font-weight: 700;
     color: #FFFFFF;
-    /*line-height: 1.4em;*/
-    /*text-transform: uppercase;*/
     font-size: 5rem;
     margin: 0;
 }
@@ -480,8 +476,6 @@ margin on the iframe, cause it breaks stuff. */
 .blog-description {
     font-weight: 300;
     font-size: 1.8rem;
-    /*line-height: 1.6em;*/
-    /*text-transform: uppercase;*/
     margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -500,9 +494,9 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 30px;
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid #FF4040;
+    border: 1px solid #EF4F47;
     background-color: #FFFFFF;
-    color: #FF4040;
+    color: #EF4F47;
     margin-right: .5rem;
     text-decoration: none;
     text-align: center;
@@ -535,15 +529,6 @@ margin on the iframe, cause it breaks stuff. */
     padding: 4rem 0;
 }
 
-.poweredby .icon-ghost {
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.poweredby .icon-ghost:hover {
-    text-decoration: none;
-}
-
 .poweredby .icon-ghost:before {
     font-size: 1rem;
     margin-right: 0.2em;
@@ -565,10 +550,6 @@ margin on the iframe, cause it breaks stuff. */
     border-top: 1px solid #E6E6E6;
 }
 
-.post-wrapper:hover {
-    /*background-color: #F5F5F5;*/
-}
-
 .post {
     padding: 4rem 0;
 }
@@ -584,7 +565,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-excerpt p {
     margin: 1.6rem 0;
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.6;
 }
 
 .post-meta {
@@ -602,7 +583,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-meta a:hover {
-    color: #FF4040;
+    color: #EF4F47;
 }
 
 .post-template .content {
@@ -626,11 +607,20 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-template .post-footer {
-    background-color: #FF4040;
+    background-color: #EF4F47;
     color: #FFFFFF;
     padding: 4rem 0;
-    border-top: 1px solid #DA1D1D;
-    border-bottom: 1px solid #DA1D1D;
+    border-top: 1px solid #DD3838;
+    border-bottom: 1px solid #DD3838;
+}
+
+.post-template .post-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-template .post-footer a:hover {
+    text-decoration: underline;
 }
 
 .author-wrapper {
@@ -655,7 +645,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .author-meta p {
     margin: 0;
-    line-height: 1.4em;
+    line-height: 1.35;
 }
 
 p.author-name {
@@ -679,20 +669,20 @@ p.author-name {
 }
 
 .post .share {
-    margin-top: 1rem;
+    margin-top: .6rem;
     color: #FFFFFF;
 }
 
 .post .share a {
     text-decoration: none;
-    color: #FF4040;
+    color: #EF4F47;
     display: inline-block;
     height: 1.3em;
     width: 1.3em;
     background-color: #FFFFFF;
     border-radius: 50%;
-    line-height: 1.3em;
-    border: 1px solid #FF4040;
+    line-height: 1.35;
+    border: 1px solid #EF4F47;
     margin-left: .2em;
     text-align: center;
 }
@@ -726,9 +716,9 @@ p.author-name {
    ========================================================================== */
 
 .pagination-wrapper {
-    background-color: #FF4040;
-    border-bottom: 1px solid #DA1D1D;
-    border-top: 1px solid #DA1D1D;
+    background-color: #EF4F47;
+    border-bottom: 1px solid #DD3838;
+    border-top: 1px solid #DD3838;
 }
 
 .pagination {
@@ -784,6 +774,9 @@ p.author-name {
     font-size: 1.1rem;
 }
 
+/* ==========================================================================
+   9. Media Queries - Smaller than 768px
+   ========================================================================== */
 
 @media (max-width: 768px) {
     .container {
@@ -791,4 +784,19 @@ p.author-name {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .author-meta ul {
+        display: block;
+        margin-bottom: 0.6rem;
+        line-height: 1.35;
+    }
+
+    .author-meta ul li {
+        display: block;
+        margin: 0px;
+    }
 }
+
+/* ==========================================================================
+   End of file.
+   ========================================================================== */
