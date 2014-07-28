@@ -205,12 +205,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 p, ul, ol, dl {
-    margin: 1em 0 1.6em 0;
+    margin: 1.8rem 0 2.9rem 0;
 }
 
 ol ol, ul ul,
 ul ol, ol ul {
-    margin: 0.4em 0;
+    margin: 0.7rem 0;
 }
 
 dl dt {
@@ -222,12 +222,12 @@ dl dt {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: bold;
-    margin-bottom: 1em
+    margin-bottom: 1.8rem
 }
 
 dl dd {
     margin-left: 200px;
-    margin-bottom: 1em
+    margin-bottom: 1.8rem;
 }
 
 hr {
@@ -261,8 +261,8 @@ button:hover, .button:hover {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.6em 0;
-    padding: 0 0 0 1em;
+    margin: 2.9rem 0;
+    padding: 0 0 0 1.8rem;
     border-left: 4px solid #999999;
     color: #999999;
 }
@@ -274,7 +274,7 @@ blockquote p {
 blockquote small {
     display: inline-block;
     margin: 0.8em 0 0.8em 1.5em;
-    font-size:0.9em;
+    font-size: 0.9em;
     color: #ccc;
 }
 
@@ -344,8 +344,8 @@ kbd {
 table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.6em 0;
-    width:100%;
+    margin: 2.9rem 0;
+    width: 100%;
     max-width: 100%;
     background-color: transparent;
 }
@@ -384,7 +384,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 iframe, .fluid-width-video-wrapper {
     display: block;
-    margin: 1.6em 0;
+    margin: 2.9rem 0;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
@@ -571,6 +571,16 @@ margin on the iframe, cause it breaks stuff. */
 .post-meta {
     color: #999999;
     margin: 0;
+    margin-top: .4rem;
+}
+
+.post-content > h1,
+.post-content > h2,
+.post-content > h3, 
+.post-content > h4, 
+.post-content > h5,
+.post-content > h6 {
+    margin-top: 1.8rem;
 }
 
 .post-meta .post-meta-tags {
