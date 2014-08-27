@@ -600,6 +600,10 @@ margin on the iframe, cause it breaks stuff. */
     overflow: hidden;
 }
 
+.post-content {
+    padding-bottom: 4rem;
+}
+
 /* Keep images centred and within the bounds of the post-width */
 .post-content img {
     display: block;
