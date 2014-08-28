@@ -447,6 +447,43 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0;
     background: #EF4F47 no-repeat center center;
     border-bottom: 1px solid #DD3838;
+    z-index: 2;
+}
+
+.site-head-stripe {
+    height: .4rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #EF4F47;
+    border-bottom: 1px solid #DD3838;
+    z-index: 1;
+}
+
+.site-head-social {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.site-head-social a {
+    width: 30px;
+    height: 30px;
+    font-size: 21px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #EF4F47;
+    background-color: #FFFFFF;
+    color: #EF4F47;
+    margin-right: .5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.site-head-social a:hover {
+    border: 1px solid #FFFFFF;
 }
 
 .blog-logo {
@@ -478,33 +515,6 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.5);
-}
-
-
-.site-head-social {
-    width: 100%;
-    text-align: center;
-    margin-top: 4rem;
-}
-
-.site-head-social a {
-    width: 30px;
-    height: 30px;
-    font-size: 21px;
-    line-height: 30px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid #EF4F47;
-    background-color: #FFFFFF;
-    color: #EF4F47;
-    margin-right: .5rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.site-head-social a:hover {
-    border: 1px solid #FFFFFF;
 }
 
 .site-footer {
