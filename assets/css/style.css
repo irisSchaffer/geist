@@ -35,7 +35,7 @@ html {
    -webkit-text-size-adjust: 100%;
 }
 body { margin: 0; }
-a { background: transparent; }
+a { background: transparent; color: inherit; §}
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
@@ -190,7 +190,6 @@ h6 {
 }
 
 a {
-    color: #333;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -263,12 +262,13 @@ blockquote {
     box-sizing: border-box;
     margin: 2.9rem 0;
     padding: 0 0 0 1.8rem;
-    border-left: 4px solid #999999;
+    border-left: .5rem solid #999999;
     color: #999999;
 }
 
 blockquote p {
     margin: 0.8em 0;
+    font-size: 2rem;
 }
 
 blockquote small {
@@ -281,10 +281,17 @@ blockquote small {
 blockquote small:before { content: '\2014 \00A0'; }
 
 blockquote cite {
-    font-weight:bold;
+    display: block;
+    font-size: 1.8rem;
 }
 
-blockquote cite a { font-weight: normal; }
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote cite a {
+    font-weight: normal;
+}
 
 mark {
     background-color: #ffc336;
